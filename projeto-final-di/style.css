@@ -8,9 +8,27 @@
   --accent-crimson: #C21A00;
   --accent-hover: #991400;
 
+  --font: var(font-family: 'Merriweather', Georgia, serif;);
   --bs-body-bg: var(--bg-parchment);
   --bs-body-color: var(--text-primary);
   --bs-primary: var(--accent-crimson);
   --bs-link-color: var(--accent-crimson);
   --bs-link-hover-color: var(--accent-hover);
+}
+
+body {
+  background-color: var(--bg-parchment);
+  color: var(--text-primary);
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+
+h1 {
+  color: var(--accent-crimson);
+  font-size: 36px;
+  font-weight: 900;
+}
+h3 {
+  color: var(--accent-crimson);
+  font-weight: 500;
 }
