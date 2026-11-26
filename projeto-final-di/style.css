@@ -1,86 +1,16 @@
-/* tokens.css - Configuração de cores e tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root {
-  /* Superfícies */
   --bg-parchment: #F7F1E4;
-  --bg-surface-alt: #EDE4D3; /* Para cards ou sidebars */
+  --bg-surface-alt: #EDE4D3;
+  --text-primary: #1E1B18;
+  --text-muted: #575049;
+  --accent-crimson: #C21A00;
+  --accent-hover: #991400;
 
-  /* Tipografia e Destaques */
-  --text-primary: #1E1B18;   /* Contraste ~13:1 sobre #F7F1E4 (AAA) */
-  --text-muted: #575049;     /* Para legendas e metadados (AA) */
-  --accent-crimson: #C21A00; /* Contraste 5.42:1 sobre #F7F1E4 (AA / AAA Large) */
-  --accent-hover: #991400;   /* Estado de foco/hover mais escuro */
-
-  /* Espaçamento e Largura de Leitura */
-  --measure: 65ch; /* Largura ideal para leitura confortável */
-}
-
-/* Reset e Base Mobile-First */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background-color: var(--bg-parchment);
-  color: var(--text-primary);
-  font-family: 'Georgia', 'Times New Roman', serif; /* Ou 'Merriweather' / 'Lora' via Google Fonts */
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Estrutura Semântica */
-.article-container {
-  max-width: var(--measure);
-  margin: 0 auto;
-  padding: 2rem 1.25rem;
-}
-
-.era-tag {
-  display: inline-block;
-  color: var(--accent-crimson);
-  font-family: system-ui, -apple-system, sans-serif;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-h1 {
-  color: var(--accent-crimson);
-  font-size: clamp(2rem, 5vw, 3rem); /* Tipografia fluida responsiva */
-  line-height: 1.15;
-  margin-top: 0;
-}
-
-blockquote {
-  border-left: 4px solid var(--accent-crimson);
-  background-color: var(--bg-surface-alt);
-  margin: 1.5rem 0;
-  padding: 1rem 1.25rem;
-  font-style: italic;
-}
-
-a {
-  color: var(--accent-crimson);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-a:hover, a:focus-visible {
-  color: var(--accent-hover);
-  outline: 2px solid var(--accent-crimson);
-  outline-offset: 2px;
-}
-
-@import url('https://googleapis.com');
-
-body {
-    font-family: "Merriweather", serif;
-}
-@font-face {
-    font-family: "Custom Font";
-    src: url("mycustomfont.woff2") format("woff2"),
-    url("mycustomfont.woff") format("woff"),
-    url("mycustomfont.ttf") format("truetype");
+  --bs-body-bg: var(--bg-parchment);
+  --bs-body-color: var(--text-primary);
+  --bs-primary: var(--accent-crimson);
+  --bs-link-color: var(--accent-crimson);
+  --bs-link-hover-color: var(--accent-hover);
 }
