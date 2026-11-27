@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --bg-parchment: #F7F1E4;
+  --bg-surface-alt: #EDE4D3;
+  --text-primary: #1E1B18;
+  --text-muted: #575049;
+  --accent-crimson: #C21A00;
+  --accent-hover: #991400;
+
+  --font: var(font-family: 'Merriweather', Georgia, serif;);
+  --bs-body-bg: var(--bg-parchment);
+  --bs-body-color: var(--text-primary);
+  --bs-primary: var(--accent-crimson);
+  --bs-link-color: var(--accent-crimson);
+  --bs-link-hover-color: var(--accent-hover);
+}
+
+body {
+  background-color: var(--bg-parchment);
+  color: var(--text-primary);
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+
+h1 {
+  color: var(--accent-crimson);
+  font-size: 36px;
+  font-weight: 900;
+}
+h3 {
+  color: var(--accent-crimson);
+  font-weight: 500;
+}
+
+header{
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-bottom: #1E1B18 1px solid;
+}
+  
+.header-interactives{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;
+}
+
+nav a{
+  text-decoration: none;
+  color:#1E1B18;
+  font-weight: 500;
+  font-size: 18px
+}
+
+.header-btn{
+  background: #991400;
+  background: linear-gradient(120deg, rgb(116, 33, 21) 0%, rgba(153, 20, 0, 1) 100%);
+  color:#EDE4D3;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 8px;
+  border-radius: 5px
+}
+
+.header-btn:hover{
+  background: #6d251a;
+}
