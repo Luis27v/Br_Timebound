@@ -1,5 +1,5 @@
 # Brasil: Século XX (1888–1985) — Linha do Tempo Histórica
-Brazil Timebound
+# Brazil Timebound
 
 Aplicação web educacional desenvolvida como projeto final de Desenvolvimento Web, dedicada a documentar e apresentar de forma interativa os principais marcos políticos, sociais e culturais da História do Brasil ao longo do século XX.
 
@@ -29,7 +29,7 @@ A paleta segue a proporção **60-30-10** com estética editorial de papel e tin
 ## Tecnologias Utilizadas
 
 * **HTML5 Semântico:** Estruturação acessível com `<header>`, `<nav>`, `<main>`, `<section>` e `<footer>`.
-* **CSS3 Customizado:** Tokens de cores, tipografia (*Merriweather* via Google Fonts) e sobrescrita controlada de variáveis.
+* **CSS3 Customizado:** Tokens de cores, carregamento local de tipografia (`@font-face`) e sobrescrita controlada de variáveis.
 * **Bootstrap 5.3:** Sistema de grid responsivo, barra de navegação retrátil, carrossel e modal.
 * **JavaScript Vanilla (ES6+):** Separação entre camada de dados (`data.js`) e manipulação do DOM (`app.js`).
 
@@ -39,7 +39,9 @@ A paleta segue a proporção **60-30-10** com estética editorial de papel e tin
 /
 ├── index.html          # Estrutura semântica principal, carrossel, modal e login
 ├── css/
-│   └── styles.css      # Tokens de cor, tipografia e regras de modo escuro
+│   └── styles.css      # Tokens de cor, regras @font-face e estilos de modo escuro
+├── fonts/
+│   └── ...             # Arquivos locais de tipografia editorial (WOFF2/TTF)
 ├── js/
 │   ├── data.js         # Acervo estruturado dos eventos históricos (Array de Objetos)
 │   └── app.js          # Renderização dos cards, filtros e controles de acessibilidade
